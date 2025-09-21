@@ -1,0 +1,27 @@
+Project #1 Electronics in Jordan, Week#1
+Hello Team,
+ 
+Welcome on board with us! Our first project together is to build a pipeline that scrapes product data from electronics websites in Jordan and saves it into a database. The focus of this week is to get started, set up your environment, and move towards a first working prototype.
+ 
+An email was sent over to you to create your emails,  and tomorrow we will complete the on-boarding process.
+ 
+Websites to target:
+• SmartBuy Jordan: https://smartbuy-me.com
+• Leaders Center Jordan: https://www.leaders.jo
+ 
+Week 1 Deliverables:
+ 
+By the end of this week, you should be able to show:
+• Your environment setup is complete (Python, Git, and required libraries installed).
+• A repository has been created (GitHub or local).
+• Working links have been identified (at least one category and one product from each site).
+• A database has been chosen (Excel, PostgreSQL, MongoDB, or another option of your choice).
+• A first prototype is running, able to fetch and save at least some product data.
+• A documented plan including: 
+• What database you chose and why.
+• Which product fields you will collect (title, price, brand, etc.).
+• The next steps you intend to take.
+ 
+Please take initiative in managing your time and approach during this week. The goal is to ensure you have started the project with a clear direction and are able to demonstrate the first results.
+
+OneDrive: https://1drv.ms/f/c/5c8398f77ba906eb/EmFwbkSC8DFEollaInT4oZABOoxG-u7WknATQrrTnAIAxQ?e=gQZm5J
