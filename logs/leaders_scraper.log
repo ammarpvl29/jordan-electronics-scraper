@@ -1,0 +1,18 @@
+2025-09-21 19:06:48,875 - INFO - Fetching: https://leaders.jo/en/
+2025-09-21 19:07:03,601 - INFO - Found category: SAMSUNG -> https://leaders.jo/en/brand/samsung/
+2025-09-21 19:07:03,602 - INFO - Found category: APPLE -> https://leaders.jo/en/brand/apple/
+2025-09-21 19:07:03,603 - INFO - Fetching: https://leaders.jo/en/brand/samsung/
+2025-09-21 19:07:16,965 - INFO - Found product: https://leaders.jo/en/product-category/all-products/electronics/mobiles/
+2025-09-21 19:07:16,966 - INFO - Found product: https://leaders.jo/en/product-category/all-products/kitchen-appliances/
+2025-09-21 19:07:16,967 - INFO - Found product: https://leaders.jo/en/product-category/all-products/home-appliance/tv-and-video-screens/tv-screens/
+2025-09-21 19:07:16,969 - INFO - Fetching: https://leaders.jo/en/product-category/all-products/electronics/mobiles/
+2025-09-21 19:07:30,522 - INFO - Scraped product: Mobiles
+2025-09-21 20:34:25,361 - INFO - Fetching: https://leaders.jo/en/
+2025-09-21 20:34:40,145 - INFO - Found category: SAMSUNG -> https://leaders.jo/en/brand/samsung/
+2025-09-21 20:34:40,146 - INFO - Found category: APPLE -> https://leaders.jo/en/brand/apple/
+2025-09-21 20:34:40,148 - INFO - Fetching: https://leaders.jo/en/brand/samsung/
+2025-09-21 20:34:53,496 - INFO - Found product: https://leaders.jo/en/product-category/all-products/electronics/mobiles/
+2025-09-21 20:34:53,497 - INFO - Found product: https://leaders.jo/en/product-category/all-products/kitchen-appliances/
+2025-09-21 20:34:53,497 - INFO - Found product: https://leaders.jo/en/product-category/all-products/home-appliance/tv-and-video-screens/tv-screens/
+2025-09-21 20:34:53,500 - INFO - Fetching: https://leaders.jo/en/product-category/all-products/electronics/mobiles/
+2025-09-21 20:35:07,420 - INFO - Scraped product: Mobiles
