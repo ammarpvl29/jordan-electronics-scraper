@@ -29,18 +29,52 @@ The following fields are being collected for each product:
 | `url` | String | Product page URL (unique identifier) | "https://smartbuy-me.com/product/..." |
 | `title` | String | Product name/title | "Samsung WW70T3020BS 7KG Washer" |
 | `price` | String | Product price as displayed | "439.000 JOD" |
-| `currency` | String | Currency code | "JOD" |
-| `source_website` | String | Origin website | "smartbuy" or "leaders" |
-| `category` | String | Product category | "washing-machines" |
+| `currency` | String | **Auto-detected** from price text | "JOD", "USD", "EUR" |
+| `source_website` | String | **Auto-detected** from URL | "SmartBuy Jordan", "Leaders Center Jordan" |
+| `category` | String | **Smart-detected** from content | "Home Appliances", "Mobile Phones" |
+| `brand` | String | Product manufacturer | "Samsung", "Apple", "Oppo" |
+| `description` | String | Product description (truncated) | "Samsung front-loading washer..." |
 | `scraped_at` | DateTime | Timestamp of data collection | "2025-09-21T10:30:00Z" |
 
+### 🤖 Smart Field Detection Implementation
+
+#### Dynamic Currency Detection
+- **Method**: Pattern matching on price text using regular expressions
+- **Supported**: JOD (د.ا), USD ($), EUR (€)
+- **Logic**: Scans price string for currency symbols and codes
+- **Fallback**: Defaults to "JOD" for Jordan-based websites
+
+#### Automatic Source Website Detection
+- **Method**: URL domain analysis
+- **Implementation**: Extracts website identity from product URL
+- **Mapping**: 
+  - `smartbuy` domain → "SmartBuy Jordan"
+  - `leaders.jo` domain → "Leaders Center Jordan"
+  - Unknown domains → Domain name extraction
+
+#### Intelligent Category Classification
+- **Method**: Keyword analysis of URLs and product titles
+- **Categories Detected**:
+  - Mobile Phones (phone, smartphone, iphone, samsung, oppo)
+  - Computers & Laptops (laptop, computer, pc, macbook)
+  - Wearables (watch, smartwatch, fitness, tracker)
+  - Home Appliances (washing, dryer, refrigerator, washer)
+  - Audio & Sound (speaker, headphone, audio, sound)
+  - Personal Care (shaver, epilator, grooming)
+  - Gaming (console, playstation, xbox, gaming)
+  - TVs & Monitors (tv, monitor, display, screen)
+  - Cameras & Photography (camera, photo, video)
+- **Fallback Strategy**: Uses URL structure category if no specific match found
+
+### Enhanced Data Collection Fields
+- `brand`: String - Product manufacturer (extracted from page content)
+- `description`: String - Product description (first 200 characters)
+
 ### Future Enhancement Fields (Planned)
-- `brand`: String - Product manufacturer (Samsung, Apple, etc.)
 - `model`: String - Specific product model
 - `specifications`: Object - Technical specifications
 - `availability`: String - Stock status
 - `images`: Array - Product image URLs
-- `description`: String - Product description
 - `rating`: Number - Customer rating
 - `reviews_count`: Integer - Number of reviews
 
@@ -57,10 +91,13 @@ The following fields are being collected for each product:
 
 ### 🔧 Current Technical Architecture
 - **Web Scraping**: BeautifulSoup4 + Requests (chosen over Selenium for simplicity)
+- **Smart Data Detection**: Dynamic currency, source website, and category identification
+- **Intelligent Classification**: Keyword-based product categorization system
 - **Rate Limiting**: Respectful crawling with delays (10 seconds for Leaders.jo)
 - **Error Handling**: Robust exception handling and logging
 - **Data Deduplication**: URL-based uniqueness constraints
-- **Logging**: Comprehensive logging for monitoring and debugging
+- **Comprehensive Logging**: Monitoring and debugging with Unicode-safe log output
+- **Multi-Currency Support**: Auto-detection of JOD, USD, EUR currencies
 
 ## Next Steps
 
@@ -112,7 +149,15 @@ The following fields are being collected for each product:
 
 ## Conclusion
 
-The Week 1 deliverables have been successfully completed with a solid foundation for the Jordan Electronics scraping pipeline. MongoDB was chosen for its alignment with company technology stack and flexibility for handling diverse product data. The current implementation provides a robust base for expansion and enhancement in subsequent weeks.
+The Week 1 deliverables have been successfully completed with a solid foundation for the Jordan Electronics scraping pipeline. MongoDB was chosen for its alignment with company technology stack and flexibility for handling diverse product data. 
+
+**Key Technical Achievements:**
+- **Smart Field Detection**: Implemented dynamic currency, source website, and category detection
+- **Intelligent Classification**: Products are automatically categorized based on content analysis
+- **Robust Data Collection**: Enhanced schema with dynamic field population
+- **Unicode-Safe Logging**: Resolved encoding issues for reliable monitoring
+
+The current implementation provides a robust base for expansion and enhancement in subsequent weeks, with intelligent data processing capabilities that reduce manual configuration and improve data quality.
 
 The next phase will focus on code organization, data enhancement, and building towards a production-ready automated pipeline that can scale to monitor the entire Jordan electronics market effectively.
 

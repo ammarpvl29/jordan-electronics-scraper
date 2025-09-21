@@ -42,14 +42,14 @@ class DatabaseManager:
             )
             
             if result.upserted_id:
-                logger.info(f"✅ New product saved: {product_data['title']}")
+                logger.info(f"New product saved: {product_data['title']}")
                 return True
             else:
-                logger.info(f"✅ Product updated: {product_data['title']}")
+                logger.info(f"Product updated: {product_data['title']}")
                 return True
                 
         except Exception as e:
-            logger.error(f"❌ Failed to save product: {e}")
+            logger.error(f"Failed to save product: {e}")
             return False
     
     def log_scraping_session(self, website, status, products_count, notes=""):
@@ -64,10 +64,10 @@ class DatabaseManager:
             }
             
             self.logs.insert_one(log_entry)
-            logger.info(f"✅ Logged scraping session for {website}")
+            logger.info(f"Logged scraping session for {website}")
             
         except Exception as e:
-            logger.error(f"❌ Failed to log session: {e}")
+            logger.error(f"Failed to log session: {e}")
     
     def close(self):
         """Close database connection"""
@@ -206,6 +206,9 @@ class SmartBuyScraper:
             'url': product_url,
             'title': '',
             'price': '',
+            'currency': '',
+            'source_website': '',
+            'category': '',  # Will be set dynamically
             'brand': '',
             'description': '',
             'scraped_at': datetime.now().isoformat()
@@ -235,6 +238,62 @@ class SmartBuyScraper:
                 if desc_elem:
                     product_data['description'] = desc_elem.get_text().strip()[:200]  # First 200 chars
                     break
+            
+            # Dynamic field detection
+            # 1. Extract currency from price text
+            if product_data['price']:
+                price_text = product_data['price']
+                if 'د.ا' in price_text or 'JOD' in price_text.upper():
+                    product_data['currency'] = 'JOD'
+                elif '$' in price_text or 'USD' in price_text.upper():
+                    product_data['currency'] = 'USD'
+                elif '€' in price_text or 'EUR' in price_text.upper():
+                    product_data['currency'] = 'EUR'
+                else:
+                    product_data['currency'] = 'JOD'  # Default for Jordan
+            
+            # 2. Detect source website from URL
+            if 'smartbuy' in product_url.lower():
+                product_data['source_website'] = 'SmartBuy Jordan'
+            elif 'leaders.jo' in product_url.lower():
+                product_data['source_website'] = 'Leaders Center Jordan'
+            else:
+                # Extract domain name
+                from urllib.parse import urlparse
+                domain = urlparse(product_url).netloc
+                product_data['source_website'] = domain
+            
+            # 3. Try to detect category from URL or page content (this will be overridden by the calling function if needed)
+            url_lower = product_url.lower()
+            title_lower = product_data['title'].lower()
+            
+            # Category detection based on URL patterns and product titles
+            if any(keyword in url_lower or keyword in title_lower for keyword in 
+                   ['phone', 'mobile', 'smartphone', 'iphone', 'samsung', 'oppo', 'huawei']):
+                product_data['category'] = 'Mobile Phones'
+            elif any(keyword in url_lower or keyword in title_lower for keyword in 
+                     ['laptop', 'computer', 'pc', 'macbook', 'notebook']):
+                product_data['category'] = 'Computers & Laptops'
+            elif any(keyword in url_lower or keyword in title_lower for keyword in 
+                     ['watch', 'smartwatch', 'fitness', 'tracker']):
+                product_data['category'] = 'Wearables'
+            elif any(keyword in url_lower or keyword in title_lower for keyword in 
+                     ['tv', 'television', 'monitor', 'display', 'screen']):
+                product_data['category'] = 'TVs & Monitors'
+            elif any(keyword in url_lower or keyword in title_lower for keyword in 
+                     ['washing', 'dryer', 'refrigerator', 'appliance', 'washer']):
+                product_data['category'] = 'Home Appliances'
+            elif any(keyword in url_lower or keyword in title_lower for keyword in 
+                     ['audio', 'speaker', 'headphone', 'earphone', 'sound']):
+                product_data['category'] = 'Audio & Sound'
+            elif any(keyword in url_lower or keyword in title_lower for keyword in 
+                     ['camera', 'photo', 'video', 'lens']):
+                product_data['category'] = 'Cameras & Photography'
+            elif any(keyword in url_lower or keyword in title_lower for keyword in 
+                     ['gaming', 'game', 'console', 'playstation', 'xbox']):
+                product_data['category'] = 'Gaming'
+            else:
+                product_data['category'] = 'Electronics'  # Default category
             
             logger.info(f"Scraped product: {product_data['title']}")
             
@@ -288,7 +347,9 @@ def main():
                         product_data = scraper.scrape_product(product_url)
                         
                         if product_data and product_data.get('title'):
-                            product_data['category'] = category_name
+                            # If category wasn't detected dynamically, use the category name from URL
+                            if not product_data.get('category') or product_data['category'] == 'Electronics':
+                                product_data['category'] = category_name
                             
                             # Save to database
                             if db.save_product(product_data):

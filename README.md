@@ -17,11 +17,14 @@ This scraping pipeline is designed to:
 ## 📋 Features
 
 - ✅ **Multi-Site Scraping**: Supports SmartBuy and Leaders websites
+- ✅ **Smart Field Detection**: Dynamic currency, source, and category detection
 - ✅ **MongoDB Integration**: Automatic data storage with deduplication
+- ✅ **Intelligent Categorization**: Auto-classifies products into specific categories
 - ✅ **Respectful Scraping**: Rate limiting and robots.txt compliance
 - ✅ **Comprehensive Logging**: Detailed logging for monitoring and debugging
 - ✅ **Error Handling**: Robust exception handling and recovery
 - ✅ **Data Validation**: URL-based uniqueness and data integrity checks
+- ✅ **Currency Auto-Detection**: Supports JOD, USD, EUR with smart extraction
 
 ## 🛠️ Technology Stack
 
@@ -95,13 +98,41 @@ python leaders_scraper.py
 
 | Field | Type | Description | Example |
 |-------|------|-------------|---------|
-| `url` | String | Product page URL (unique) | "https://smartbuy-me.com/product/..." |
-| `title` | String | Product name | "Samsung WW70T3020BS 7KG Washer" |
-| `price` | String | Price as displayed | "439.000 JOD" |
-| `currency` | String | Currency code | "JOD" |
-| `source_website` | String | Source identifier | "smartbuy" or "leaders" |
-| `category` | String | Product category | "washing-machines" |
-| `scraped_at` | DateTime | Collection timestamp | "2025-09-21T10:30:00Z" |
+| `url` | String | Product page URL (unique identifier) | "https://smartbuy-me.com/product/..." |
+| `title` | String | Product name/title | "Samsung WW70T3020BS 7KG Washer" |
+| `price` | String | Price as displayed on website | "439.000 JOD" |
+| `currency` | String | **Auto-detected** from price text | "JOD", "USD", "EUR" |
+| `source_website` | String | **Auto-detected** from URL | "SmartBuy Jordan", "Leaders Center Jordan" |
+| `category` | String | **Smart-detected** from content/URL | "Home Appliances", "Mobile Phones", "Wearables" |
+| `brand` | String | Product manufacturer | "Samsung", "Apple", "Oppo" |
+| `description` | String | Product description (first 200 chars) | "Samsung front-loading washer..." |
+| `scraped_at` | DateTime | Data collection timestamp | "2025-09-21T10:30:00Z" |
+
+### 🤖 Smart Field Detection
+
+#### Currency Detection
+- **Automatic extraction** from price text using pattern matching
+- **Supported currencies**: JOD (د.ا), USD ($), EUR (€)
+- **Default fallback**: JOD (Jordan's currency)
+
+#### Source Website Detection
+- **URL-based identification**: Automatically detects website from product URL
+- **Supported sites**: SmartBuy Jordan, Leaders Center Jordan
+- **Extensible**: Automatically handles new domains
+
+#### Category Classification
+- **Intelligent categorization** based on URL patterns and product titles
+- **Categories include**:
+  - Mobile Phones (phone, smartphone, iphone, samsung, oppo)
+  - Computers & Laptops (laptop, computer, pc, macbook)
+  - Wearables (watch, smartwatch, fitness tracker)
+  - Home Appliances (washing, dryer, refrigerator)
+  - Audio & Sound (speaker, headphone, audio)
+  - Personal Care (shaver, epilator, grooming)
+  - Gaming (console, playstation, xbox)
+  - TVs & Monitors (tv, monitor, display)
+  - Cameras & Photography (camera, photo, video)
+- **Fallback system**: Uses category from URL structure if specific detection fails
 
 ### Database Structure
 
