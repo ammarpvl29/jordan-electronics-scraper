@@ -1,0 +1,19 @@
+Project #1 Electronics in Jordan, Week#2
+Hello Team,
+ 
+As we move into Week 2 of the project, our focus will shift to two key areas:
+ 
+1. Fixing Categorization Issues
+We want to improve how the scraped appliances are categorized in the database. Please review the current data, identify where categorization is unclear or inconsistent, and work on solutions to ensure products are organized properly.
+ 
+2. Live Extraction with Daily Refresh
+This week, we also want to move from one-time scraping to a live process. The goal is for the extraction to run automatically at a set time each day, refreshing the data so we always have an up-to-date view. Please explore scheduling options and implement a solution that works with the tools you have chosen.
+ 
+ 
+ 
+By the end of the week, the expectation is that you will:
+ 
+Demonstrate improved product categorization in the database.
+ 
+Show an automated process that refreshes the data daily at a scheduled time.
+ 
