@@ -53,6 +53,7 @@ def detect_source_website(url):
 def classify_product_category(url, title):
     """
     Classify product into category based on URL and title
+    Enhanced version with better patterns, Arabic support, and more categories
     
     Args:
         url (str): Product URL
@@ -63,28 +64,177 @@ def classify_product_category(url, title):
     """
     url_lower = url.lower()
     title_lower = title.lower() if title else ''
+    combined_text = f"{url_lower} {title_lower}"
     
-    # Define category keywords
+    # Enhanced category keywords with Arabic support and more specific categories
+    # Order matters: more specific keywords first
     categories = {
-        'Mobile Phones': ['phone', 'mobile', 'smartphone', 'iphone', 'samsung', 'oppo', 'huawei', 'xiaomi', 'oneplus'],
-        'Computers & Laptops': ['laptop', 'computer', 'pc', 'macbook', 'notebook', 'desktop'],
-        'Wearables': ['watch', 'smartwatch', 'fitness', 'tracker', 'band', 'wearable'],
-        'TVs & Monitors': ['tv', 'television', 'monitor', 'display', 'screen', 'smart tv'],
-        'Audio & Sound': ['audio', 'speaker', 'headphone', 'earphone', 'sound', 'bluetooth', 'headset', 'earbuds'],
-        'Cameras & Photography': ['camera', 'photo', 'video', 'lens', 'dslr', 'mirrorless'],
-        'Gaming': ['gaming', 'game', 'console', 'playstation', 'xbox', 'nintendo', 'ps5', 'ps4'],
-        'Home Appliances': ['washing', 'dryer', 'refrigerator', 'appliance', 'washer', 'fridge', 'microwave', 'oven'],
-        'Personal Care': ['shaver', 'epilator', 'grooming', 'personal care', 'trimmer', 'hair dryer'],
-        'Tablets': ['tablet', 'ipad', 'tab'],
-        'Accessories': ['case', 'cover', 'charger', 'cable', 'adapter', 'accessory', 'power bank']
+        # Specific appliances first (to avoid conflicts)
+        'Small Home Appliances': [
+            'microwave', 'blender', 'mixer', 'toaster', 'coffee maker', 'kettle',
+            'iron', 'vacuum', 'cleaner', 'air fryer', 'juicer', 'food processor',
+            'rice cooker', 'slow cooker', 'pressure cooker',
+            'مايكروويف', 'خلاط', 'محمصة', 'مكواة', 'مكنسة'
+        ],
+        'Kitchen Appliances': [
+            'kitchen appliance', 'cooking appliance', 'baking', 'chef', 'culinary', 'food prep',
+            'مطبخ', 'طبخ'
+        ],
+        'Large Home Appliances': [
+            'washing machine', 'washer', 'dryer', 'refrigerator', 'fridge', 'dishwasher',
+            'oven', 'stove', 'range', 'freezer', 'غسالة', 'ثلاجة', 'مجمد'
+        ],
+        'Air Conditioners & Cooling': [
+            'air conditioner', 'ac', 'cooling', 'fan', 'heater', 'humidifier',
+            'dehumidifier', 'air purifier', 'مكيف', 'تكييف', 'مروحة', 'تبريد'
+        ],
+        
+        # Personal Care
+        'Personal Care': [
+            'shaver', 'epilator', 'grooming', 'personal care', 'trimmer', 'hair dryer',
+            'straightener', 'curler', 'electric toothbrush', 'ماكينة حلاقة', 'تشذيب'
+        ],
+        
+        # Power & Connectivity (specific terms first)
+        'Power & Batteries': [
+            'power bank', 'powerbank', 'powercore', 'battery pack', 'portable battery', 'battery charger',
+            'ups', 'uninterruptible power supply', 'power supply', 'generator',
+            'solar panel', 'بطارية', 'طاقة'
+        ],
+        'Networking': [
+            'router', 'wifi router', 'wireless router', 'modem', 'network', 'ethernet', 
+            'switch', 'access point', 'range extender', 'راوتر', 'مودم', 'شبكة'
+        ],
+        
+        # Gaming
+        'Gaming': [
+            'gaming', 'game console', 'console', 'playstation', 'xbox', 'nintendo', 'ps5', 'ps4',
+            'controller', 'joystick', 'gaming chair', 'gaming mouse', 'gaming keyboard',
+            'ألعاب', 'بلايستيشن'
+        ],
+        
+        # Audio & Entertainment
+        'Audio & Sound': [
+            'speaker', 'bluetooth speaker', 'wireless speaker', 'soundbar', 'subwoofer', 
+            'headphone', 'headphones', 'earphone', 'earphones', 'headset', 'earbuds',
+            'amplifier', 'microphone', 'audio system', 'sound system',
+            'سماعة', 'صوت', 'مكبر'
+        ],
+        'TVs & Monitors': [
+            'television', 'smart tv', 'led tv', 'oled', 'qled', 'lcd tv', '4k tv', '8k tv',
+            'monitor', 'display', 'screen', 'computer monitor', 'gaming monitor',
+            'تلفزيون', 'تلفاز', 'شاشة', 'مونيتر'
+        ],
+        
+        # Computing
+        'Computers & Laptops': [
+            'laptop', 'notebook', 'ultrabook', 'chromebook', 'macbook', 'vivobook',
+            'computer', 'desktop', 'pc', 'workstation', 'gaming pc', 'all-in-one pc',
+            'book amd', 'book intel', 'book ryzen',  # Specific laptop patterns
+            'كمبيوتر', 'لابتوب', 'حاسوب'
+        ],
+        'Tablets': [
+            'tablet', 'ipad', 'android tablet', 'windows tablet', 'kindle', 'surface tablet',
+            'تابلت', 'لوح'
+        ],
+        
+        # Mobile & Communication (check exact patterns first)
+        'Mobile Phones': [
+            'smartphone', 'mobile phone', 'cell phone', 'iphone', 'android phone',
+            'galaxy phone', 'galaxy s', 'galaxy note', 'pixel phone', 'nokia phone',
+            'samsung phone', 'oppo phone', 'huawei phone', 'xiaomi phone',
+            'phone'  # Keep generic 'phone' last to avoid conflicts
+        ],
+        
+        # Wearables & Health
+        'Wearables': [
+            'smartwatch', 'smart watch', 'fitness tracker', 'fitness band', 'activity tracker',
+            'sports watch', 'running watch', 'apple watch', 'galaxy watch', 'fitbit',
+            'fitness band', 'wearable device', 'health tracker', 'charge 6', 'charge 5',
+            'ساعة ذكية', 'ساعة رياضية'
+        ],
+        
+        # Cameras & Photography
+        'Cameras & Photography': [
+            'camera', 'digital camera', 'dslr', 'mirrorless camera', 'action camera',
+            'camcorder', 'video camera', 'gopro', 'photo', 'photography',
+            'كاميرا', 'تصوير'
+        ],
+        
+        # Accessories (most general, check last)
+        'Accessories': [
+            'phone case', 'case', 'tablet case', 'laptop case', 'screen protector',
+            'phone charger', 'charger', 'cable', 'adapter', 'mount', 'stand', 'holder',
+            'car charger', 'wireless charger', 'protector', 'cover',
+            'كفر', 'حامل'
+        ]
     }
     
-    # Check each category
+    # Check each category for exact keyword matches
     for category, keywords in categories.items():
-        if any(keyword in url_lower or keyword in title_lower for keyword in keywords):
+        for keyword in keywords:
+            if keyword in combined_text:
+                return category
+    
+    # Brand-based categorization for ambiguous cases
+    brand_patterns = {
+        'Computers & Laptops': [
+            'asus laptop', 'asus notebook', 'asus vivobook', 'asus zenbook', 'asus gaming',
+            'dell laptop', 'dell inspiron', 'dell xps', 'hp laptop', 'hp pavilion',
+            'lenovo laptop', 'lenovo thinkpad', 'lenovo ideapad'
+        ],
+        'Mobile Phones': [
+            'oppo', 'huawei', 'xiaomi', 'oneplus', 'realme', 'vivo phone', 'vivo smartphone', 
+            'nokia phone', 'motorola phone'
+        ],
+        'Gaming': [
+            'razer gaming', 'logitech gaming', 'corsair gaming', 'asus gaming', 'msi gaming'
+        ],
+        'Audio & Sound': [
+            'bose', 'jbl', 'beats', 'sennheiser', 'sony audio', 'harman kardon'
+        ],
+        'Cameras & Photography': [
+            'canon camera', 'nikon camera', 'sony camera', 'fujifilm', 'olympus camera'
+        ],
+        'Personal Care': [
+            'braun grooming', 'gillette', 'panasonic grooming', 'remington'
+        ],
+        'Kitchen Appliances': [
+            'kitchenaid', 'cuisinart', 'hamilton beach', 'ninja kitchen'
+        ]
+    }
+    
+    # Check brand patterns
+    for category, brands in brand_patterns.items():
+        for brand in brands:
+            if brand in combined_text:
+                return category
+    
+    # URL pattern matching for additional context (more specific patterns first)
+    url_patterns = {
+        'Power & Batteries': ['/power-bank/', '/battery/', '/ups/', '/power/'],
+        'Wearables': ['/fitness-tracker/', '/smartwatch/', '/watch/', '/fitness/', '/wearable/', '/tracker/'],
+        'Computers & Laptops': ['/laptop/', '/computer/', '/pc/', '/notebook/', '/macbook/'],
+        'Accessories': ['/accessory/', '/case/', '/cover/'],
+        'Kitchen Appliances': ['/kitchen/', '/cooking/', '/microwave/'],
+        'Mobile Phones': ['/mobile/', '/phone/', '/smartphone/', '/iphone/', '/galaxy/'],
+        'TVs & Monitors': ['/tv/', '/television/', '/monitor/', '/display/'],
+        'Audio & Sound': ['/audio/', '/speaker/', '/headphone/', '/sound/', '/headset/'],
+        'Gaming': ['/gaming/', '/console/', '/game/', '/playstation/', '/xbox/'],
+        'Large Home Appliances': ['/appliance/', '/washing/', '/refrigerator/', '/washer/'],
+        'Personal Care': ['/grooming/', '/personal-care/', '/shaver/'],
+        'Networking': ['/network/', '/router/', '/wifi/']
+    }
+    
+    for category, patterns in url_patterns.items():
+        if any(pattern in url_lower for pattern in patterns):
             return category
     
-    # Default category
+    # Final fallback: check for common electronics terms
+    electronics_keywords = ['electronic', 'digital', 'smart', 'tech', 'device']
+    if any(keyword in combined_text for keyword in electronics_keywords):
+        return 'Electronics'
+    
     return 'Electronics'
 
 def clean_text(text):

@@ -6,3 +6,349 @@
 2025-09-26 21:59:46,082 - smartbuyscraper - INFO - No categories found, looking for product-containing pages...
 2025-09-26 22:05:58,850 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com
 2025-09-26 22:06:01,762 - smartbuyscraper - INFO - No categories found, looking for product-containing pages...
+2025-09-26 22:44:03,328 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com
+2025-09-26 22:44:06,300 - smartbuyscraper - INFO - No categories found, looking for product-containing pages...
+2025-09-26 22:51:22,218 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/products/gts0803st0027
+2025-09-26 22:51:25,703 - smartbuyscraper - INFO - Scraped product: ASUS Vivo Book AMD Ryzen 3 7320U, 4GB & 256GB SSD, 15.6inch, Win11
+2025-09-26 22:51:25,709 - smartbuyscraper - INFO - Looking for SmartBuy collections and categories...
+2025-09-26 22:51:25,709 - smartbuyscraper - INFO - Testing category: iPhone 12 -> https://smartbuy-me.com/collections/iphone-12
+2025-09-26 22:51:25,709 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/iphone-12
+2025-09-26 22:51:27,902 - smartbuyscraper - INFO - Testing category: Tablets -> https://smartbuy-me.com/collections/tablets
+2025-09-26 22:51:27,902 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/tablets
+2025-09-26 22:51:30,239 - smartbuyscraper - INFO - Testing category: Heat Pump -> https://smartbuy-me.com/collections/heat-pump
+2025-09-26 22:51:30,240 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/heat-pump
+2025-09-26 22:51:32,488 - smartbuyscraper - INFO - Testing category: Apple -> https://smartbuy-me.com/collections/apple
+2025-09-26 22:51:32,488 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/apple
+2025-09-26 22:51:34,740 - smartbuyscraper - INFO - Testing category: Samsung -> https://smartbuy-me.com/collections/samsung
+2025-09-26 22:51:34,741 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/samsung
+2025-09-26 22:51:36,910 - smartbuyscraper - INFO - Testing category: Sony -> https://smartbuy-me.com/collections/sony
+2025-09-26 22:51:36,911 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/sony
+2025-09-26 22:51:39,136 - smartbuyscraper - INFO - Testing category: ASUS -> https://smartbuy-me.com/collections/asus
+2025-09-26 22:51:39,137 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/asus
+2025-09-26 22:51:41,443 - smartbuyscraper - INFO - Testing category: Dell -> https://smartbuy-me.com/collections/dell
+2025-09-26 22:51:41,444 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/dell
+2025-09-26 22:51:43,746 - smartbuyscraper - INFO - Testing category: HP -> https://smartbuy-me.com/collections/hp
+2025-09-26 22:51:43,746 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/hp
+2025-09-26 22:51:46,003 - smartbuyscraper - INFO - Testing category: Lenovo -> https://smartbuy-me.com/collections/lenovo
+2025-09-26 22:51:46,004 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/lenovo
+2025-09-26 22:51:48,187 - smartbuyscraper - INFO - Testing category: Xiaomi -> https://smartbuy-me.com/collections/xiaomi
+2025-09-26 22:51:48,188 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/xiaomi
+2025-09-26 22:51:50,608 - smartbuyscraper - INFO - Testing category: Huawei -> https://smartbuy-me.com/collections/huawei
+2025-09-26 22:51:50,609 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/huawei
+2025-09-26 22:51:52,857 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com
+2025-09-26 22:51:55,829 - smartbuyscraper - INFO - Total categories found: 206
+2025-09-26 22:51:55,831 - smartbuyscraper - INFO - Scraping products from category: https://smartbuy-me.com/collections/iphone-12
+2025-09-26 22:51:55,831 - smartbuyscraper - INFO - Already scraped: https://smartbuy-me.com/collections/iphone-12
+2025-09-26 22:51:55,832 - smartbuyscraper - INFO - Scraping products from category: https://smartbuy-me.com/collections/tablets
+2025-09-26 22:51:55,832 - smartbuyscraper - INFO - Already scraped: https://smartbuy-me.com/collections/tablets
+2025-09-26 22:51:55,845 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/products/gts0803st0027
+2025-09-26 22:51:59,000 - smartbuyscraper - INFO - Scraped product: ASUS Vivo Book AMD Ryzen 3 7320U, 4GB & 256GB SSD, 15.6inch, Win11
+2025-09-26 22:51:59,002 - smartbuyscraper - INFO - Looking for SmartBuy collections and categories...
+2025-09-26 22:51:59,002 - smartbuyscraper - INFO - Testing category: iPhone 12 -> https://smartbuy-me.com/collections/iphone-12
+2025-09-26 22:51:59,002 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/iphone-12
+2025-09-26 22:52:01,259 - smartbuyscraper - INFO - Testing category: Tablets -> https://smartbuy-me.com/collections/tablets
+2025-09-26 22:52:01,259 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/tablets
+2025-09-26 22:52:03,479 - smartbuyscraper - INFO - Testing category: Heat Pump -> https://smartbuy-me.com/collections/heat-pump
+2025-09-26 22:52:03,479 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/heat-pump
+2025-09-26 22:52:05,754 - smartbuyscraper - INFO - Testing category: Apple -> https://smartbuy-me.com/collections/apple
+2025-09-26 22:52:05,754 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/apple
+2025-09-26 22:52:07,955 - smartbuyscraper - INFO - Testing category: Samsung -> https://smartbuy-me.com/collections/samsung
+2025-09-26 22:52:07,956 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/samsung
+2025-09-26 22:52:10,157 - smartbuyscraper - INFO - Testing category: Sony -> https://smartbuy-me.com/collections/sony
+2025-09-26 22:52:10,157 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/sony
+2025-09-26 22:52:12,513 - smartbuyscraper - INFO - Testing category: ASUS -> https://smartbuy-me.com/collections/asus
+2025-09-26 22:52:12,513 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/asus
+2025-09-26 22:52:14,780 - smartbuyscraper - INFO - Testing category: Dell -> https://smartbuy-me.com/collections/dell
+2025-09-26 22:52:14,781 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/dell
+2025-09-26 22:52:17,018 - smartbuyscraper - INFO - Testing category: HP -> https://smartbuy-me.com/collections/hp
+2025-09-26 22:52:17,018 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/hp
+2025-09-26 22:52:19,275 - smartbuyscraper - INFO - Testing category: Lenovo -> https://smartbuy-me.com/collections/lenovo
+2025-09-26 22:52:19,275 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/lenovo
+2025-09-26 22:52:21,532 - smartbuyscraper - INFO - Testing category: Xiaomi -> https://smartbuy-me.com/collections/xiaomi
+2025-09-26 22:52:21,532 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/xiaomi
+2025-09-26 22:52:23,696 - smartbuyscraper - INFO - Testing category: Huawei -> https://smartbuy-me.com/collections/huawei
+2025-09-26 22:52:23,696 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/huawei
+2025-09-26 22:52:25,826 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com
+2025-09-26 22:52:28,461 - smartbuyscraper - INFO - Total categories found: 206
+2025-09-26 22:52:28,462 - smartbuyscraper - INFO - Scraping products from category: https://smartbuy-me.com/collections/iphone-12
+2025-09-26 22:52:28,462 - smartbuyscraper - INFO - Already scraped: https://smartbuy-me.com/collections/iphone-12
+2025-09-26 22:52:28,463 - smartbuyscraper - INFO - Scraping products from category: https://smartbuy-me.com/collections/tablets
+2025-09-26 22:52:28,463 - smartbuyscraper - INFO - Already scraped: https://smartbuy-me.com/collections/tablets
+2025-09-26 22:58:37,183 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/products/gts0803st0027
+2025-09-26 22:58:40,068 - smartbuyscraper - INFO - Scraped product: ASUS Vivo Book AMD Ryzen 3 7320U, 4GB & 256GB SSD, 15.6inch, Win11
+2025-09-26 22:58:40,071 - smartbuyscraper - INFO - Looking for SmartBuy collections and categories...
+2025-09-26 22:58:40,071 - smartbuyscraper - INFO - Testing category: iPhone 12 -> https://smartbuy-me.com/collections/iphone-12
+2025-09-26 22:58:40,071 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/iphone-12
+2025-09-26 22:58:42,231 - smartbuyscraper - INFO - Testing category: Tablets -> https://smartbuy-me.com/collections/tablets
+2025-09-26 22:58:42,232 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/tablets
+2025-09-26 22:58:44,391 - smartbuyscraper - INFO - Testing category: Heat Pump -> https://smartbuy-me.com/collections/heat-pump
+2025-09-26 22:58:44,391 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/heat-pump
+2025-09-26 22:58:46,545 - smartbuyscraper - INFO - Testing category: APPLE -> https://smartbuy-me.com/collections/apple
+2025-09-26 22:58:46,546 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/apple
+2025-09-26 22:58:48,708 - smartbuyscraper - INFO - Testing category: SAMSUNG -> https://smartbuy-me.com/collections/samsung
+2025-09-26 22:58:48,708 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/samsung
+2025-09-26 22:58:50,870 - smartbuyscraper - INFO - Testing category: NESPRESSO -> https://smartbuy-me.com/collections/nespresso
+2025-09-26 22:58:50,870 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/nespresso
+2025-09-26 22:58:53,015 - smartbuyscraper - INFO - Testing category: LENOVO -> https://smartbuy-me.com/collections/lenovo
+2025-09-26 22:58:53,016 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/lenovo
+2025-09-26 22:58:55,149 - smartbuyscraper - INFO - Testing category: DELL -> https://smartbuy-me.com/collections/dell
+2025-09-26 22:58:55,150 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/dell
+2025-09-26 22:58:57,388 - smartbuyscraper - INFO - Testing category: SONY -> https://smartbuy-me.com/collections/sony
+2025-09-26 22:58:57,389 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/sony
+2025-09-26 22:58:59,534 - smartbuyscraper - INFO - Testing category: ASUS -> https://smartbuy-me.com/collections/asus
+2025-09-26 22:58:59,534 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/asus
+2025-09-26 22:59:01,751 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com
+2025-09-26 23:01:07,130 - smartbuyscraper - INFO - Looking for SmartBuy collections and categories...
+2025-09-26 23:01:07,130 - smartbuyscraper - INFO - Testing category: iPhone 12 -> https://smartbuy-me.com/collections/iphone-12
+2025-09-26 23:01:07,130 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/iphone-12
+2025-09-26 23:01:09,733 - smartbuyscraper - INFO - [OK] Found valid category: iPhone 12
+2025-09-26 23:01:09,734 - smartbuyscraper - INFO - Testing category: Tablets -> https://smartbuy-me.com/collections/tablets
+2025-09-26 23:01:09,734 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/tablets
+2025-09-26 23:01:11,872 - smartbuyscraper - INFO - [OK] Found valid category: Tablets
+2025-09-26 23:01:11,872 - smartbuyscraper - INFO - Testing category: Heat Pump -> https://smartbuy-me.com/collections/heat-pump
+2025-09-26 23:01:11,873 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/heat-pump
+2025-09-26 23:01:14,021 - smartbuyscraper - INFO - [OK] Found valid category: Heat Pump
+2025-09-26 23:01:14,022 - smartbuyscraper - INFO - Testing category: APPLE -> https://smartbuy-me.com/collections/apple
+2025-09-26 23:01:14,022 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/apple
+2025-09-26 23:01:16,201 - smartbuyscraper - INFO - [OK] Found valid category: APPLE
+2025-09-26 23:01:16,201 - smartbuyscraper - INFO - Testing category: SAMSUNG -> https://smartbuy-me.com/collections/samsung
+2025-09-26 23:01:16,202 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/samsung
+2025-09-26 23:01:18,369 - smartbuyscraper - INFO - [OK] Found valid category: SAMSUNG
+2025-09-26 23:01:18,370 - smartbuyscraper - INFO - Testing category: NESPRESSO -> https://smartbuy-me.com/collections/nespresso
+2025-09-26 23:01:18,370 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/nespresso
+2025-09-26 23:01:20,512 - smartbuyscraper - INFO - [OK] Found valid category: NESPRESSO
+2025-09-26 23:01:20,512 - smartbuyscraper - INFO - Testing category: LENOVO -> https://smartbuy-me.com/collections/lenovo
+2025-09-26 23:01:20,513 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/lenovo
+2025-09-26 23:01:22,644 - smartbuyscraper - INFO - [OK] Found valid category: LENOVO
+2025-09-26 23:01:22,644 - smartbuyscraper - INFO - Testing category: DELL -> https://smartbuy-me.com/collections/dell
+2025-09-26 23:01:22,645 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/dell
+2025-09-26 23:01:24,793 - smartbuyscraper - INFO - [OK] Found valid category: DELL
+2025-09-26 23:01:24,793 - smartbuyscraper - INFO - Testing category: SONY -> https://smartbuy-me.com/collections/sony
+2025-09-26 23:01:24,794 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/sony
+2025-09-26 23:01:26,958 - smartbuyscraper - INFO - [OK] Found valid category: SONY
+2025-09-26 23:01:26,958 - smartbuyscraper - INFO - Testing category: ASUS -> https://smartbuy-me.com/collections/asus
+2025-09-26 23:01:26,959 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/asus
+2025-09-26 23:01:29,087 - smartbuyscraper - INFO - [OK] Found valid category: ASUS
+2025-09-26 23:01:29,087 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com
+2025-09-26 23:01:31,576 - smartbuyscraper - INFO - Total categories found: 198
+2025-09-26 23:06:22,154 - smartbuyscraper - INFO - Looking for SmartBuy collections and categories...
+2025-09-26 23:06:22,154 - smartbuyscraper - INFO - Testing category: iPhone 12 -> https://smartbuy-me.com/collections/iphone-12
+2025-09-26 23:06:22,155 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/iphone-12
+2025-09-26 23:06:24,674 - smartbuyscraper - INFO - [OK] Found valid category: iPhone 12
+2025-09-26 23:06:24,674 - smartbuyscraper - INFO - Testing category: Tablets -> https://smartbuy-me.com/collections/tablets
+2025-09-26 23:06:24,675 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/tablets
+2025-09-26 23:06:26,809 - smartbuyscraper - INFO - [OK] Found valid category: Tablets
+2025-09-26 23:06:26,810 - smartbuyscraper - INFO - Testing category: Heat Pump -> https://smartbuy-me.com/collections/heat-pump
+2025-09-26 23:06:26,810 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/heat-pump
+2025-09-26 23:06:28,949 - smartbuyscraper - INFO - [OK] Found valid category: Heat Pump
+2025-09-26 23:06:28,949 - smartbuyscraper - INFO - Testing category: APPLE -> https://smartbuy-me.com/collections/apple
+2025-09-26 23:06:28,950 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/apple
+2025-09-26 23:06:31,105 - smartbuyscraper - INFO - [OK] Found valid category: APPLE
+2025-09-26 23:06:31,105 - smartbuyscraper - INFO - Testing category: SAMSUNG -> https://smartbuy-me.com/collections/samsung
+2025-09-26 23:06:31,106 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/samsung
+2025-09-26 23:06:33,231 - smartbuyscraper - INFO - [OK] Found valid category: SAMSUNG
+2025-09-26 23:06:33,232 - smartbuyscraper - INFO - Testing category: NESPRESSO -> https://smartbuy-me.com/collections/nespresso
+2025-09-26 23:06:33,233 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/nespresso
+2025-09-26 23:06:35,379 - smartbuyscraper - INFO - [OK] Found valid category: NESPRESSO
+2025-09-26 23:06:35,380 - smartbuyscraper - INFO - Testing category: LENOVO -> https://smartbuy-me.com/collections/lenovo
+2025-09-26 23:06:35,380 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/lenovo
+2025-09-26 23:06:37,529 - smartbuyscraper - INFO - [OK] Found valid category: LENOVO
+2025-09-26 23:06:37,529 - smartbuyscraper - INFO - Testing category: DELL -> https://smartbuy-me.com/collections/dell
+2025-09-26 23:06:37,530 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/dell
+2025-09-26 23:06:39,729 - smartbuyscraper - INFO - [OK] Found valid category: DELL
+2025-09-26 23:06:39,729 - smartbuyscraper - INFO - Testing category: SONY -> https://smartbuy-me.com/collections/sony
+2025-09-26 23:06:39,729 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/sony
+2025-09-26 23:06:41,845 - smartbuyscraper - INFO - [OK] Found valid category: SONY
+2025-09-26 23:06:41,846 - smartbuyscraper - INFO - Testing category: ASUS -> https://smartbuy-me.com/collections/asus
+2025-09-26 23:06:41,846 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com/collections/asus
+2025-09-26 23:06:43,990 - smartbuyscraper - INFO - [OK] Found valid category: ASUS
+2025-09-26 23:06:43,990 - smartbuyscraper - INFO - Fetching: https://smartbuy-me.com
+2025-09-26 23:06:46,235 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Promotions -> https://smartbuy-me.com/collections/promotions
+2025-09-26 23:06:46,236 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Stoves & Ovens -> https://smartbuy-me.com/collections/stoves-ovens
+2025-09-26 23:06:46,236 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Hardware & Tools -> https://smartbuy-me.com/collections/hardware-tools
+2025-09-26 23:06:46,236 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Household Products -> https://smartbuy-me.com/collections/non-electronics
+2025-09-26 23:06:46,237 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: HUAWEI -> https://smartbuy-me.com/collections/huawei
+2025-09-26 23:06:46,237 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: XIAOMI -> https://smartbuy-me.com/collections/xiaomi
+2025-09-26 23:06:46,237 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: BEKO -> https://smartbuy-me.com/collections/beko
+2025-09-26 23:06:46,238 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: BOSCH -> https://smartbuy-me.com/collections/bosch
+2025-09-26 23:06:46,238 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: INFINIX -> https://smartbuy-me.com/collections/infinix
+2025-09-26 23:06:46,238 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: BRAUN -> https://smartbuy-me.com/collections/braun
+2025-09-26 23:06:46,238 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: CANON -> https://smartbuy-me.com/collections/canon-1
+2025-09-26 23:06:46,239 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: D-LINK -> https://smartbuy-me.com/collections/d-link
+2025-09-26 23:06:46,239 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: iSmart -> https://smartbuy-me.com/collections/ismart
+2025-09-26 23:06:46,239 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: iPad -> https://smartbuy-me.com/collections/ipad
+2025-09-26 23:06:46,240 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: iMac -> https://smartbuy-me.com/collections/imac
+2025-09-26 23:06:46,240 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: iPhone -> https://smartbuy-me.com/collections/iphone
+2025-09-26 23:06:46,240 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Apple Watches -> https://smartbuy-me.com/collections/apple-watches
+2025-09-26 23:06:46,241 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Apple Accessories -> https://smartbuy-me.com/collections/apple-accessories
+2025-09-26 23:06:46,241 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: SmartCom -> https://smartbuy-me.com/collections/smartcom
+2025-09-26 23:06:46,241 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Mobile Phones -> https://smartbuy-me.com/collections/mobile-phone
+2025-09-26 23:06:46,242 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Smart Watch -> https://smartbuy-me.com/collections/smart-watch
+2025-09-26 23:06:46,242 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Mobile Accessoris -> https://smartbuy-me.com/collections/mobile-accessories
+2025-09-26 23:06:46,242 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Fixed Line -> https://smartbuy-me.com/collections/fixed-line
+2025-09-26 23:06:46,242 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Miscellaneous  Electricals -> https://smartbuy-me.com/collections/miscellaneous-electricals
+2025-09-26 23:06:46,243 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Irons -> https://smartbuy-me.com/collections/irons
+2025-09-26 23:06:46,243 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Vacuum Cleaner -> https://smartbuy-me.com/collections/vacuum-cleaner
+2025-09-26 23:06:46,243 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Air Treatment -> https://smartbuy-me.com/collections/air-treatment
+2025-09-26 23:06:46,244 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Personal Care -> https://smartbuy-me.com/collections/personal-care
+2025-09-26 23:06:46,244 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Small Kitchen Appliances -> https://smartbuy-me.com/collections/small-kitchen-appliances
+2025-09-26 23:06:46,244 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Seasonal -> https://smartbuy-me.com/collections/seasonal
+2025-09-26 23:06:46,244 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Dishwashers -> https://smartbuy-me.com/collections/dishwashers
+2025-09-26 23:06:46,245 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Refrigerators -> https://smartbuy-me.com/collections/refrigerators
+2025-09-26 23:06:46,245 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Freezers -> https://smartbuy-me.com/collections/freezers
+2025-09-26 23:06:46,245 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Air Conditions -> https://smartbuy-me.com/collections/air-conditions
+2025-09-26 23:06:46,245 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Built-In -> https://smartbuy-me.com/collections/built-in
+2025-09-26 23:06:46,246 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: SmartTech -> https://smartbuy-me.com/collections/smarttech
+2025-09-26 23:06:46,246 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Computers -> https://smartbuy-me.com/collections/computers
+2025-09-26 23:06:46,246 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Printers & Scanners -> https://smartbuy-me.com/collections/printers
+2025-09-26 23:06:46,246 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Monitors & Projectors -> https://smartbuy-me.com/collections/monitors
+2025-09-26 23:06:46,246 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Software -> https://smartbuy-me.com/collections/software
+2025-09-26 23:06:46,247 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: AV Accessories -> https://smartbuy-me.com/collections/av-accessories
+2025-09-26 23:06:46,247 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Networking -> https://smartbuy-me.com/collections/networking
+2025-09-26 23:06:46,247 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: SmartFun -> https://smartbuy-me.com/collections/smartfun
+2025-09-26 23:06:46,247 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: TV'S -> https://smartbuy-me.com/collections/tvs
+2025-09-26 23:06:46,247 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Audio / Video -> https://smartbuy-me.com/collections/audio-video
+2025-09-26 23:06:46,248 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Gaming -> https://smartbuy-me.com/collections/gaming-consoles
+2025-09-26 23:06:46,248 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Cameras -> https://smartbuy-me.com/collections/cameras
+2025-09-26 23:06:46,248 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: iPhone 13 -> https://smartbuy-me.com/collections/iphone-13
+2025-09-26 23:06:46,248 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: iPhone 14 -> https://smartbuy-me.com/collections/iphone-14
+2025-09-26 23:06:46,248 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: iPhone 15 -> https://smartbuy-me.com/collections/iphone-15
+2025-09-26 23:06:46,248 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: iPhone 16 -> https://smartbuy-me.com/collections/iphone-17
+2025-09-26 23:06:46,249 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Smart Phone -> https://smartbuy-me.com/collections/smart-phone
+2025-09-26 23:06:46,249 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Tablets -> https://smartbuy-me.com/collections/tablet-menu
+2025-09-26 23:06:46,249 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: iPad Pro -> https://smartbuy-me.com/collections/ipad-pro
+2025-09-26 23:06:46,249 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: iPad Air -> https://smartbuy-me.com/collections/ipad-air
+2025-09-26 23:06:46,249 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: iPad Mini -> https://smartbuy-me.com/collections/ipad-mini
+2025-09-26 23:06:46,249 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: NOTEBOOKS & PC -> https://smartbuy-me.com/collections/notebooks-pc
+2025-09-26 23:06:46,249 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: MacBook -> https://smartbuy-me.com/collections/macbook
+2025-09-26 23:06:46,250 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: MacMini -> https://smartbuy-me.com/collections/macmini
+2025-09-26 23:06:46,250 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Notebooks -> https://smartbuy-me.com/collections/notebooks
+2025-09-26 23:06:46,250 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Gaming Notebook -> https://smartbuy-me.com/collections/gaming-notebook
+2025-09-26 23:06:46,250 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Desktop -> https://smartbuy-me.com/collections/desktop
+2025-09-26 23:06:46,250 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Monitors -> https://smartbuy-me.com/collections/monitors-1
+2025-09-26 23:06:46,250 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Gaming Monitors -> https://smartbuy-me.com/collections/gaming-monitors
+2025-09-26 23:06:46,251 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Projectors -> https://smartbuy-me.com/collections/projectors
+2025-09-26 23:06:46,251 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: HD TV's -> https://smartbuy-me.com/collections/hd
+2025-09-26 23:06:46,251 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: FHD TV's -> https://smartbuy-me.com/collections/fhd
+2025-09-26 23:06:46,251 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: UHD TV's -> https://smartbuy-me.com/collections/uhd-tvs
+2025-09-26 23:06:46,251 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: OLED TV's -> https://smartbuy-me.com/collections/oled-tvs
+2025-09-26 23:06:46,252 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: QLED TV's -> https://smartbuy-me.com/collections/qled-tvs
+2025-09-26 23:06:46,252 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Qled 8K -> https://smartbuy-me.com/collections/qled-8k
+2025-09-26 23:06:46,252 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Qled 4K -> https://smartbuy-me.com/collections/qled-4k
+2025-09-26 23:06:46,252 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Mini LED -> https://smartbuy-me.com/collections/mini-led
+2025-09-26 23:06:46,252 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Printer -> https://smartbuy-me.com/collections/printer
+2025-09-26 23:06:46,252 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Multifunction -> https://smartbuy-me.com/collections/multifunction
+2025-09-26 23:06:46,252 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Routers -> https://smartbuy-me.com/collections/routers
+2025-09-26 23:06:46,253 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Modems -> https://smartbuy-me.com/collections/modems
+2025-09-26 23:06:46,253 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Extenders -> https://smartbuy-me.com/collections/extenders
+2025-09-26 23:06:46,253 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Switch -> https://smartbuy-me.com/collections/switch
+2025-09-26 23:06:46,253 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Inks & Toners -> https://smartbuy-me.com/collections/inks-toners
+2025-09-26 23:06:46,253 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Papers -> https://smartbuy-me.com/collections/papers
+2025-09-26 23:06:46,253 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Software Programs -> https://smartbuy-me.com/collections/software-programs
+2025-09-26 23:06:46,253 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Antivirus -> https://smartbuy-me.com/collections/antivirus
+2025-09-26 23:06:46,254 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Small Appliances -> https://smartbuy-me.com/collections/small-appliances
+2025-09-26 23:06:46,254 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Steam Iron -> https://smartbuy-me.com/collections/steam-iron
+2025-09-26 23:06:46,254 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Garment Steamer -> https://smartbuy-me.com/collections/garment-steamer
+2025-09-26 23:06:46,254 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Steam Generator -> https://smartbuy-me.com/collections/steam-generator
+2025-09-26 23:06:46,254 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Canister Vacuum -> https://smartbuy-me.com/collections/canister-vacuum
+2025-09-26 23:06:46,254 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Drum Vacuum -> https://smartbuy-me.com/collections/drum-vacuum
+2025-09-26 23:06:46,255 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Robot Vacuum -> https://smartbuy-me.com/collections/robot-vacuum
+2025-09-26 23:06:46,255 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Upright Vacuum -> https://smartbuy-me.com/collections/upright-vacuum
+2025-09-26 23:06:46,255 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Steam Mop -> https://smartbuy-me.com/collections/steam-mop
+2025-09-26 23:06:46,255 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Handheld Vacuum -> https://smartbuy-me.com/collections/handheld-vacuum
+2025-09-26 23:06:46,256 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Spot Cleaner -> https://smartbuy-me.com/collections/spot-cleaner
+2025-09-26 23:06:46,256 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Air Purifier -> https://smartbuy-me.com/collections/air-purifier
+2025-09-26 23:06:46,256 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Humidifier/Dehumidifier -> https://smartbuy-me.com/collections/humidifier-dehumidifier/Humidifier
+2025-09-26 23:06:46,256 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Air Diffusers -> https://smartbuy-me.com/collections/air-diffusers
+2025-09-26 23:06:46,256 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Kettles -> https://smartbuy-me.com/collections/kettles
+2025-09-26 23:06:46,256 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Toasters & Grill -> https://smartbuy-me.com/collections/toasters-grill
+2025-09-26 23:06:46,257 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Coffee Makers -> https://smartbuy-me.com/collections/coffee-maker
+2025-09-26 23:06:46,257 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: JUICERS -> https://smartbuy-me.com/collections/juicers
+2025-09-26 23:06:46,257 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Blenders -> https://smartbuy-me.com/collections/blenders
+2025-09-26 23:06:46,257 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Fryers -> https://smartbuy-me.com/collections/fryers
+2025-09-26 23:06:46,257 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Microwaves -> https://smartbuy-me.com/collections/microwaves
+2025-09-26 23:06:46,257 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Electric Ovens -> https://smartbuy-me.com/collections/electric-ovens
+2025-09-26 23:06:46,257 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Water Dispencers -> https://smartbuy-me.com/collections/water-dispensers
+2025-09-26 23:06:46,258 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Hot Plate -> https://smartbuy-me.com/collections/hot-plate
+2025-09-26 23:06:46,258 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Food Processors -> https://smartbuy-me.com/collections/food-processors
+2025-09-26 23:06:46,258 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Choppers -> https://smartbuy-me.com/collections/choppers
+2025-09-26 23:06:46,258 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Mixers -> https://smartbuy-me.com/collections/mixers
+2025-09-26 23:06:46,258 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Meat Grinders -> https://smartbuy-me.com/collections/meat-grinders
+2025-09-26 23:06:46,258 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Rice Cookers -> https://smartbuy-me.com/collections/rice-cookers
+2025-09-26 23:06:46,258 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Food Steamer -> https://smartbuy-me.com/collections/food-steamer
+2025-09-26 23:06:46,258 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Insect Killer -> https://smartbuy-me.com/collections/insect-killer
+2025-09-26 23:06:46,259 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Pressure Cookers -> https://smartbuy-me.com/collections/pressure-cookers
+2025-09-26 23:06:46,259 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Multicookers -> https://smartbuy-me.com/collections/multicookers
+2025-09-26 23:06:46,259 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Fans -> https://smartbuy-me.com/collections/fans
+2025-09-26 23:06:46,259 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Air Coolers -> https://smartbuy-me.com/collections/air-coolers
+2025-09-26 23:06:46,259 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Heaters -> https://smartbuy-me.com/collections/heaters
+2025-09-26 23:06:46,260 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Scales -> https://smartbuy-me.com/collections/kitchen-scale
+2025-09-26 23:06:46,260 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Accessories -> https://smartbuy-me.com/collections/accessories
+2025-09-26 23:06:46,260 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Watch 8 -> https://smartbuy-me.com/collections/watch-8
+2025-09-26 23:06:46,260 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Watch 9 -> https://smartbuy-me.com/collections/iphone-16
+2025-09-26 23:06:46,260 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Watch SE -> https://smartbuy-me.com/collections/watch-se
+2025-09-26 23:06:46,260 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Watch Ultra -> https://smartbuy-me.com/collections/watch-ultra
+2025-09-26 23:06:46,261 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Covers & Cases -> https://smartbuy-me.com/collections/covers-cases
+2025-09-26 23:06:46,261 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Connectivity -> https://smartbuy-me.com/collections/connectivity
+2025-09-26 23:06:46,261 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Covers & Cases -> https://smartbuy-me.com/collections/covers-cases-1
+2025-09-26 23:06:46,261 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Audio -> https://smartbuy-me.com/collections/audio-2
+2025-09-26 23:06:46,261 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Batteries -> https://smartbuy-me.com/collections/batteries-1
+2025-09-26 23:06:46,262 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Plugs & Adapters -> https://smartbuy-me.com/collections/plugs-adapters
+2025-09-26 23:06:46,262 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Calculators -> https://smartbuy-me.com/collections/calculators
+2025-09-26 23:06:46,262 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: LIGHTING & BULBS -> https://smartbuy-me.com/collections/lighting-bulbs-1
+2025-09-26 23:06:46,262 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Cables & Cases -> https://smartbuy-me.com/collections/cables-cases
+2025-09-26 23:06:46,262 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Computer Accessories -> https://smartbuy-me.com/collections/computer-accessories
+2025-09-26 23:06:46,262 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Bags -> https://smartbuy-me.com/collections/bags
+2025-09-26 23:06:46,263 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Storage -> https://smartbuy-me.com/collections/storage
+2025-09-26 23:06:46,263 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: UPS -> https://smartbuy-me.com/collections/ups
+2025-09-26 23:06:46,263 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: TV Stand -> https://smartbuy-me.com/collections/tv-stand
+2025-09-26 23:06:46,263 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Wall Bracket -> https://smartbuy-me.com/collections/wall-bracket
+2025-09-26 23:06:46,263 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Gaming Accessories -> https://smartbuy-me.com/collections/gaming-accessories
+2025-09-26 23:06:46,263 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Gaming Chairs -> https://smartbuy-me.com/collections/gaming-chairs
+2025-09-26 23:06:46,264 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Gaming Tables -> https://smartbuy-me.com/collections/gaming-tables
+2025-09-26 23:06:46,264 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Car Accessories -> https://smartbuy-me.com/collections/car-accessories
+2025-09-26 23:06:46,264 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Web Cameras -> https://smartbuy-me.com/collections/web-cameras
+2025-09-26 23:06:46,264 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Security Cameras -> https://smartbuy-me.com/collections/security-cameras-1
+2025-09-26 23:06:46,264 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Cameras Accessories -> https://smartbuy-me.com/collections/cameras-accessories
+2025-09-26 23:06:46,264 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Intercom & Doorbell -> https://smartbuy-me.com/collections/intercom-doorbell
+2025-09-26 23:06:46,265 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Side By Side -> https://smartbuy-me.com/collections/side-by-side
+2025-09-26 23:06:46,265 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Top Mount -> https://smartbuy-me.com/collections/top-mount
+2025-09-26 23:06:46,265 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Bottom Freezer -> https://smartbuy-me.com/collections/bottom-freezer
+2025-09-26 23:06:46,265 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Mini Bar -> https://smartbuy-me.com/collections/mini-bar
+2025-09-26 23:06:46,265 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Chillers -> https://smartbuy-me.com/collections/chillers
+2025-09-26 23:06:46,265 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Chest Freezer -> https://smartbuy-me.com/collections/chest-freezer
+2025-09-26 23:06:46,265 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Upright Freezer -> https://smartbuy-me.com/collections/upright-freezer
+2025-09-26 23:06:46,266 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Medical -> https://smartbuy-me.com/collections/medical
+2025-09-26 23:06:46,266 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Baby Appliances -> https://smartbuy-me.com/collections/baby-appliances
+2025-09-26 23:06:46,266 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Hair Care -> https://smartbuy-me.com/collections/hair-care
+2025-09-26 23:06:46,266 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Skin Care -> https://smartbuy-me.com/collections/skin-care
+2025-09-26 23:06:46,266 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Oral Care -> https://smartbuy-me.com/collections/oral-care
+2025-09-26 23:06:46,267 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Washing Machines -> https://smartbuy-me.com/collections/washing-machines
+2025-09-26 23:06:46,267 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Front Load -> https://smartbuy-me.com/collections/front-load
+2025-09-26 23:06:46,267 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Washer Dryer -> https://smartbuy-me.com/collections/washer-drayer
+2025-09-26 23:06:46,267 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Top Load -> https://smartbuy-me.com/collections/top-load
+2025-09-26 23:06:46,267 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Mini Dishwasher -> https://smartbuy-me.com/collections/mini-dishwasher
+2025-09-26 23:06:46,267 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Free Stand -> https://smartbuy-me.com/collections/free-stand
+2025-09-26 23:06:46,268 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Dryers -> https://smartbuy-me.com/collections/dryers
+2025-09-26 23:06:46,268 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Condenser -> https://smartbuy-me.com/collections/condenser
+2025-09-26 23:06:46,268 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Digital Players -> https://smartbuy-me.com/collections/digital-players
+2025-09-26 23:06:46,268 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Receivers -> https://smartbuy-me.com/collections/receivers
+2025-09-26 23:06:46,268 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Sound Bar -> https://smartbuy-me.com/collections/sound-bar
+2025-09-26 23:06:46,268 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Karaoke -> https://smartbuy-me.com/collections/karaoke
+2025-09-26 23:06:46,268 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Radio -> https://smartbuy-me.com/collections/radios
+2025-09-26 23:06:46,269 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Speakers -> https://smartbuy-me.com/collections/speakers
+2025-09-26 23:06:46,269 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Headphones -> https://smartbuy-me.com/collections/headphones
+2025-09-26 23:06:46,269 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Microphone -> https://smartbuy-me.com/collections/microphone
+2025-09-26 23:06:46,269 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Digital Cameras -> https://smartbuy-me.com/collections/digital-cameras
+2025-09-26 23:06:46,269 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Instant Cameras -> https://smartbuy-me.com/collections/instant-cameras
+2025-09-26 23:06:46,269 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Action Cameras -> https://smartbuy-me.com/collections/action-cameras
+2025-09-26 23:06:46,269 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Split Units -> https://smartbuy-me.com/collections/split-units
+2025-09-26 23:06:46,269 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Portable AC -> https://smartbuy-me.com/collections/portable-ac
+2025-09-26 23:06:46,269 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Floor Standing -> https://smartbuy-me.com/collections/floor-standing
+2025-09-26 23:06:46,270 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Gaming Consoles -> https://smartbuy-me.com/collections/gaming-consoles-1
+2025-09-26 23:06:46,270 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Built-in Dishwasher -> https://smartbuy-me.com/collections/built-in-dishwasher
+2025-09-26 23:06:46,270 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Built-in Hob -> https://smartbuy-me.com/collections/built-in-hob
+2025-09-26 23:06:46,270 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Built-in Hood -> https://smartbuy-me.com/collections/built-in-hood
+2025-09-26 23:06:46,270 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Built-in Oven -> https://smartbuy-me.com/collections/built-in-oven
+2025-09-26 23:06:46,270 - smartbuyscraper - INFO - [COLLECTION] Discovered collection: Built In Microwave -> https://smartbuy-me.com/collections/built-in-microwave
+2025-09-26 23:06:46,274 - smartbuyscraper - INFO - Total categories found: 198

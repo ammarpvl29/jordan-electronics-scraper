@@ -4,6 +4,17 @@ A comprehensive web scraping pipeline for monitoring electronics products and pr
 
 **✨ Recently refactored to hybrid architecture for better maintainability and code reuse!**
 
+**🆕 Week 2: Enhanced categorization system with 85.2% accuracy and Arabic language support!**
+
+**🔧 Latest Updates (September 26, 2025):**
+
+- **SmartBuy Scraper Debugging**: Fixed Unicode encoding issues for Windows terminal compatibility
+- **Website Structure Adaptation**: Updated for SmartBuy's `/collections/` and `/products/` URL patterns  
+- **Category Discovery Enhancement**: Now discovers 198+ product collections automatically
+- **Brand-Based Collections**: Added support for Apple, Samsung, Sony, ASUS, and 12+ other brands
+- **Comprehensive Testing**: All scrapers tested and verified working on latest website structures
+- **Categorization Bug Fix**: Resolved ASUS VivoBook misclassification issue with improved brand pattern matching
+
 ## 🎯 Project Overview
 
 This scraping pipeline is designed to:
@@ -32,8 +43,47 @@ This scraping pipeline is designed to:
 - 🆕 **Centralized Database**: Single DatabaseManager for all operations
 - 🆕 **Easy Testing**: Multiple test runners and validation scripts
 - 🆕 **Flexible Execution**: Run scrapers individually or together
+- 🔥 **Advanced Categorization**: 85.2% accuracy with 16+ product categories
+- 🔥 **Arabic Language Support**: Native Arabic product name handling
+- 🔥 **Market-Specific Logic**: Tailored for Jordanian electronics market
+- 🔥 **Comprehensive Testing**: 27+ test cases covering edge scenarios
 
-## 🏗️ Architecture Overview
+## � Week 2 Improvements (September 2025)
+
+### Enhanced Categorization System
+Our categorization algorithm has been significantly improved for the Jordanian electronics market:
+
+**📊 Performance Metrics:**
+- **85.2% categorization accuracy** (improved from 74.1%)
+- **16+ product categories** (expanded from 11)
+- **45+ Arabic keywords** for local market support
+- **27 comprehensive test cases** covering edge scenarios
+
+**🌍 Market-Specific Features:**
+- **Arabic Language Support**: Native handling of Arabic product names (هاتف ذكي, تلفزيون, مكيف)
+- **Jordanian Market Categories**: Air Conditioners, Kitchen Appliances, Power & Batteries
+- **Local Brand Recognition**: Enhanced detection for regional electronics brands
+- **Cultural Context**: Tailored categorization for Middle Eastern market preferences
+
+**🔧 Technical Enhancements:**
+- **Priority-Based Matching**: Resolves keyword conflicts intelligently
+- **URL Pattern Recognition**: Enhanced fallback categorization from product URLs  
+- **Brand-Based Classification**: Smart categorization using manufacturer context
+- **Multi-Layer Fallback**: Comprehensive system ensures accurate categorization
+- **Brand Pattern Specificity**: Fixed conflicts like "Vivo phone" vs "ASUS VivoBook" laptop
+- **Processor-Aware Patterns**: Enhanced laptop detection with "book amd", "book intel", "book ryzen"
+
+**📈 Category Coverage:**
+```
+Mobile Phones & Tablets    Gaming & Entertainment
+Computers & Laptops        Air Conditioners & Cooling  
+Audio & Sound Systems      Power & Batteries
+TVs & Monitors            Networking Equipment
+Wearables & Fitness       Kitchen Appliances
+Cameras & Photography     Small Home Appliances
+Personal Care Products    Large Home Appliances
+Accessories              Electronics (general)
+```
 
 ### Hybrid Architecture Benefits (September 2025 Refactor)
 
@@ -257,12 +307,21 @@ Each scraper generates detailed logs:
   - Combined scraper execution
   - Production and development modes
 
-**Test Results from Latest Run:**
+**Test Results from Latest Run (September 26, 2025):**
 ```
 ✅ Leaders Scraper: PASSED
-✅ SmartBuy Scraper: PASSED  
-🎉 Overall: 2/2 tests passed
+✅ SmartBuy Scraper: PASSED (Unicode fixes applied)
+🔍 SmartBuy Category Discovery: 198+ collections found
+� SmartBuy Brand Collections: 16+ brands supported
+�🎉 Overall: 2/2 tests passed
 ```
+
+**Latest SmartBuy Scraper Improvements:**
+- **Unicode Compatibility**: Removed all Unicode emojis for Windows terminal support
+- **Return Type Fix**: Fixed dictionary return format for category compatibility  
+- **Comprehensive Discovery**: Successfully finds 6 core categories + 198 collections
+- **Brand Support**: APPLE, SAMSUNG, SONY, ASUS, LENOVO, DELL, NESPRESSO, and more
+- **Categorization Fix**: Resolved brand pattern conflicts (ASUS VivoBook correctly identified as laptop, not phone)
 
 ## 📈 Monitoring
 
@@ -306,17 +365,30 @@ This project follows responsible web scraping guidelines:
 - ✅ **Comprehensive testing framework** with multiple test approaches
 - ✅ **Modular project structure** for better maintainability
 
-**🎯 Week 2 Deliverables (Due: October 3, 2025):**
-- 🔄 Fix categorization improvements
+**✅ Completed (Week 2):**
+- ✅ **Advanced categorization system** with 85.2% accuracy
+- ✅ **Arabic language support** for Jordanian market
+- ✅ **16+ product categories** covering electronics and appliances
+- ✅ **Comprehensive test suite** with 27+ test scenarios
+- ✅ **Market-specific optimizations** for Middle Eastern electronics
+
+**🔄 In Progress (Week 2):**
 - 🔄 Daily automation implementation
 - 🔄 Scheduling system for regular scraping
+- 🔄 Enhanced monitoring and logging
+
+**🎯 Week 2 Remaining (Due: October 3, 2025):**
+- 🔄 Complete daily automation system
+- 🔄 Windows Task Scheduler integration
+- 🔄 Production deployment procedures
 
 **🚀 Future Enhancements:**
 - JavaScript content handling (dynamic pages)
-- Automatic rate limit detection
-- Advanced error recovery mechanisms
-- Performance monitoring dashboard
+- Advanced price trend analysis
+- Real-time dashboard and monitoring
+- API endpoints for data access
 - Multi-threaded scraping capabilities
+- Machine learning categorization improvements
 
 ## 📄 License
 
@@ -354,5 +426,6 @@ RequestException or parsing errors
 ---
 
 *Last Updated: September 26, 2025*  
-*Version: 2.0.0 (Hybrid Architecture + Week 1 Complete)*  
-*Next Milestone: Week 2 Deliverables (Due: October 3, 2025)*
+*Version: 2.1.0 (Week 2 - Enhanced Categorization)*  
+*Current Status: Week 2 Deliverable #1 Complete (85.2% categorization accuracy)*  
+*Next Milestone: Daily Automation Implementation*

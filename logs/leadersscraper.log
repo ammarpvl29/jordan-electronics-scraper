@@ -28,3 +28,9 @@
 2025-09-26 22:05:51,747 - leadersscraper - INFO - Scraped product: Oppo Reno 14 Five G 512GB 12 RAM
 2025-09-26 22:05:51,748 - leadersscraper - INFO - Fetching: https://leaders.jo/en/product/philips-multi-use-shaver-2/
 2025-09-26 22:05:58,199 - leadersscraper - INFO - Scraped product: Philips Multi-Use Shaver
+2025-09-26 22:43:33,480 - leadersscraper - INFO - Fetching: https://leaders.jo/en/
+2025-09-26 22:43:41,899 - leadersscraper - INFO - Found additional product: https://leaders.jo/en/product/philips-multi-use-shaver-2/
+2025-09-26 22:43:41,899 - leadersscraper - INFO - Fetching: https://leaders.jo/en/product/oppo-reno-14-five-g-512gb-12-ram/
+2025-09-26 22:43:48,186 - leadersscraper - INFO - Scraped product: Oppo Reno 14 Five G 512GB 12 RAM
+2025-09-26 22:43:48,187 - leadersscraper - INFO - Fetching: https://leaders.jo/en/product/philips-multi-use-shaver-2/
+2025-09-26 22:43:54,508 - leadersscraper - INFO - Scraped product: Philips Multi-Use Shaver
