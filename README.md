@@ -6,14 +6,18 @@ A comprehensive web scraping pipeline for monitoring electronics products and pr
 
 **🆕 Week 2: Enhanced categorization system with 85.2% accuracy and Arabic language support!**
 
-**🔧 Latest Updates (September 26, 2025):**
+**🔧 Latest Updates (October 4, 2025):**
 
+- **🤖 Daily Automation System**: Implemented GitHub Actions workflow for automated daily scraping
+- **☁️ Cloud-Based Scheduling**: Runs automatically at 6:00 AM UTC (9:00 AM Jordan time) daily
+- **🔄 Orchestration Script**: New `daily_scraper.py` that manages both scrapers in sequence
+- **📊 Enhanced Logging**: Comprehensive daily run reports with success/failure tracking
+- **⚙️ Configuration Management**: Easy-to-adjust settings for scheduling and limits
+- **🧪 Local Testing**: `test_daily_scraper.py` for validating automation before deployment
 - **SmartBuy Scraper Debugging**: Fixed Unicode encoding issues for Windows terminal compatibility
 - **Website Structure Adaptation**: Updated for SmartBuy's `/collections/` and `/products/` URL patterns  
 - **Category Discovery Enhancement**: Now discovers 198+ product collections automatically
 - **Brand-Based Collections**: Added support for Apple, Samsung, Sony, ASUS, and 12+ other brands
-- **Comprehensive Testing**: All scrapers tested and verified working on latest website structures
-- **Categorization Bug Fix**: Resolved ASUS VivoBook misclassification issue with improved brand pattern matching
 
 ## 🎯 Project Overview
 
@@ -47,6 +51,9 @@ This scraping pipeline is designed to:
 - 🔥 **Arabic Language Support**: Native Arabic product name handling
 - 🔥 **Market-Specific Logic**: Tailored for Jordanian electronics market
 - 🔥 **Comprehensive Testing**: 27+ test cases covering edge scenarios
+- 🤖 **Daily Automation**: GitHub Actions-powered daily scraping at 6:00 AM UTC
+- ☁️ **Cloud Scheduling**: Runs automatically without local machine dependency
+- 📊 **Automated Monitoring**: Daily run reports with artifact upload and error tracking
 
 ## � Week 2 Improvements (September 2025)
 
@@ -109,13 +116,64 @@ The project has been refactored from monolithic scrapers to a **hybrid architect
 - **Faster development** of new site scrapers
 - **Better testing** with modular components
 
-## 🛠️ Technology Stack
+## 🤖 Daily Automation System (Week 2 Feature)
+
+**✅ Automated Daily Scraping at 6:00 AM UTC (9:00 AM Jordan Time)**
+
+### � GitHub Actions Integration
+- **Cloud-Based**: Runs automatically regardless of local machine status
+- **Scheduled Execution**: Daily at 6:00 AM UTC using cron scheduling
+- **Manual Triggers**: Can be triggered manually from GitHub Actions tab
+- **Cross-Platform**: Runs on Ubuntu latest in the cloud
+
+### 📊 Daily Orchestration
+- **Sequential Execution**: Runs Leaders.jo scraper followed by SmartBuy scraper
+- **Error Isolation**: If one scraper fails, the other continues
+- **Smart Limits**: Respectful scraping with 2-3 products per category
+- **Comprehensive Logging**: Detailed logs uploaded as artifacts
+
+### 📁 Automation Files
+```
+├── .github/workflows/daily-scraping.yml  # GitHub Actions workflow
+├── daily_scraper.py                      # Main orchestrator script
+├── test_daily_scraper.py                 # Local testing script
+├── scraping_config.py                    # Configuration settings
+└── AUTOMATION_SETUP.md                   # Detailed setup documentation
+```
+
+### 📈 Expected Daily Results
+- **Leaders.jo**: 3-4 products per day
+- **SmartBuy**: 4-6 products per day  
+- **Total**: ~7-10 fresh products daily
+- **Weekly Growth**: ~50-70 products per week
+- **Consistent Data**: Always up-to-date market information
+
+### 🔧 Easy Configuration
+```python
+# scraping_config.py
+SCRAPING_SCHEDULE = "0 6 * * *"  # 6:00 AM UTC daily
+MAX_PRODUCTS_PER_CATEGORY = 2
+MAX_CATEGORIES_PER_SITE = 2
+```
+
+### 🧪 Local Testing
+```powershell
+# Test the automation locally before deployment
+python test_daily_scraper.py
+
+# Run the daily scraper manually
+python daily_scraper.py
+```
+
+## �🛠️ Technology Stack
 
 - **Python 3.13**: Core programming language
 - **BeautifulSoup4**: HTML parsing and data extraction
 - **Requests**: HTTP client for web requests
 - **MongoDB**: NoSQL database for flexible data storage
 - **PyMongo**: MongoDB driver for Python
+- **GitHub Actions**: Cloud-based automation and scheduling
+- **Ubuntu Latest**: Cloud execution environment
 
 ## 📁 Project Structure
 
@@ -123,6 +181,8 @@ The project has been refactored from monolithic scrapers to a **hybrid architect
 
 ```
 jordan-electronics-scraper/
+├── .github/workflows/             # 🤖 GitHub Actions automation
+│   └── daily-scraping.yml        # 🤖 Daily scraping workflow
 ├── src/                           # Main source code directory
 │   ├── scrapers/                  # Scraper implementations
 │   │   ├── __init__.py
@@ -139,10 +199,18 @@ jordan-electronics-scraper/
 ├── tests/                         # Testing framework
 │   ├── test_refactored_system.py  # 🆕 Import and functionality tests
 │   └── simple_test.py             # 🆕 Subprocess testing
+├── daily_scraper.py               # 🤖 Daily automation orchestrator
+├── test_daily_scraper.py          # 🤖 Local automation testing
+├── scraping_config.py             # 🤖 Automation configuration
+├── AUTOMATION_SETUP.md            # 🤖 Automation documentation
 ├── run_scraper.py                 # 🆕 Easy runner script
+├── .gitignore                     # 🆕 Git ignore file
 ├── requirements.txt               # Python dependencies
 ├── README.md                      # This file (updated!)
 ├── Week1_Deliverables.txt        # Week 1 deliverables
+├── WEEK1_DOCUMENTED_PLAN.md       # Week 1 documentation
+├── Week2_Deliverables.txt        # Week 2 deliverables  
+├── WEEK2_DOCUMENTED_PLAN.md       # Week 2 documentation
 ├── logs/                         # Log files
 │   ├── leaders_scraper.log
 │   └── scraper.log
@@ -186,7 +254,23 @@ jordan-electronics-scraper/
 
 ### Running the Scrapers
 
-**🆕 Easy Runner (Recommended):**
+**🤖 Daily Automation (Recommended for Production):**
+```powershell
+# The system runs automatically daily at 6:00 AM UTC
+# Check GitHub Actions tab for daily run status
+# Manual trigger: GitHub → Actions → Daily Electronics Scraping → Run workflow
+```
+
+**🧪 Local Testing:**
+```powershell
+# Test the daily automation locally
+python test_daily_scraper.py
+
+# Run the daily orchestrator manually  
+python daily_scraper.py
+```
+
+**🆕 Easy Runner (Development):**
 ```powershell
 # Run individual scrapers
 python run_scraper.py leaders    # Leaders scraper only
@@ -372,15 +456,17 @@ This project follows responsible web scraping guidelines:
 - ✅ **Comprehensive test suite** with 27+ test scenarios
 - ✅ **Market-specific optimizations** for Middle Eastern electronics
 
-**🔄 In Progress (Week 2):**
-- 🔄 Daily automation implementation
-- 🔄 Scheduling system for regular scraping
-- 🔄 Enhanced monitoring and logging
+**✅ Completed (Week 2 - October 2025):**
+- ✅ **Daily automation system** with GitHub Actions workflow
+- ✅ **Cloud-based scheduling** running at 6:00 AM UTC daily
+- ✅ **Orchestration framework** managing both scrapers in sequence
+- ✅ **Automated monitoring** with comprehensive logging and error handling
+- ✅ **Configuration management** for easy schedule adjustments
+- ✅ **Local testing framework** for validation before deployment
 
-**🎯 Week 2 Remaining (Due: October 3, 2025):**
-- 🔄 Complete daily automation system
-- 🔄 Windows Task Scheduler integration
-- 🔄 Production deployment procedures
+**🎯 Week 2 Status: COMPLETED ✅**
+- ✅ **Deliverable #1**: Enhanced categorization with 85.2% accuracy
+- ✅ **Deliverable #2**: Daily automation with GitHub Actions scheduling
 
 **🚀 Future Enhancements:**
 - JavaScript content handling (dynamic pages)
@@ -425,7 +511,28 @@ RequestException or parsing errors
 
 ---
 
-*Last Updated: September 26, 2025*  
-*Version: 2.1.0 (Week 2 - Enhanced Categorization)*  
-*Current Status: Week 2 Deliverable #1 Complete (85.2% categorization accuracy)*  
-*Next Milestone: Daily Automation Implementation*
+## 🎉 Week 2 Deliverables Status
+
+### ✅ Deliverable #1: Enhanced Categorization System
+- **85.2% categorization accuracy** (improved from 74.1%)
+- **Arabic language support** for Jordanian market
+- **16+ product categories** covering electronics and appliances
+- **27+ comprehensive test cases** with edge scenario coverage
+- **Status**: COMPLETED ✅
+
+### ✅ Deliverable #2: Daily Automation System  
+- **GitHub Actions workflow** for cloud-based automation
+- **Daily scheduling** at 6:00 AM UTC (9:00 AM Jordan time)
+- **Orchestration framework** managing both scrapers
+- **Comprehensive monitoring** with logging and error handling
+- **Local testing framework** for deployment validation
+- **Status**: COMPLETED ✅
+
+**🏆 Week 2 Overall Status: COMPLETED SUCCESSFULLY**
+
+---
+
+*Last Updated: October 4, 2025*  
+*Version: 2.2.0 (Week 2 - Complete: Enhanced Categorization + Daily Automation)*  
+*Current Status: Both Week 2 deliverables completed successfully*  
+*Daily Automation: Live and running at 6:00 AM UTC daily*
